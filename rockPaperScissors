@@ -1,0 +1,26 @@
+userChoice = int(input("Enter 0 for Rock, 1 for Paper, 2 for Scissors:"))
+compChoice = random.randint(0, 2)
+
+if userChoice == 0:
+    if compChoice == 0:
+        print("You: Rock\nComputer: Rock\nIts a tie!")
+    elif compChoice == 1:
+        print("You: Rock\nComputer: Paper\nYou lose!")
+    else:
+        print("You: Rock\nComputer: Scissors\nYou win!")
+
+if userChoice == 1:
+    if compChoice == 0:
+        print("You: Paper\nComputer: Rock\nYou win!")
+    elif compChoice == 1:
+        print("You: Paper\nComputer: Paper\nIts a tie!")
+    else:
+        print("You: Paper\nComputer: Scissors\nYou lose!")
+
+if userChoice == 2:
+    if compChoice == 0:
+        print("You: Scissors\nComputer: Rock\nYou lose!")
+    elif compChoice == 1:
+        print("You: Scissors\nComputer: Paper\nYou win!")
+    else:
+        print("You: Scissors\nComputer: Scissors\nIts a tie!")
